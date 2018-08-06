@@ -2,7 +2,7 @@
 *
 *
 *  Purpose:
-*  This project is to demonstrate a built in "Noise" function withing processing.
+*  This project is to demonstrate a built in "Noise" function within processing.
 *  The noise function allows for a gradual transition between random values which 
 *  will be visualized in 3D with this program.
 *
@@ -66,7 +66,7 @@ void draw(){
   //Moving the grid back to center after rotating about the x axis. 
   translate(-w/2,-h/2);
   
-  //This loop creates the grid with the colums and rows and adds it to the screen. 
+  //This loop creates the grid with the columns and rows and adds it to the screen. 
   for(int y = 0; y < rows - 1; y++){
     beginShape(TRIANGLE_STRIP);
     for(int x = 0; x < cols; x++){
@@ -78,7 +78,7 @@ void draw(){
   
   //This loop will implement 3D Perlin noise, which is a gradual function based on previous values. 
   //This will cause the grid to look like it is moving towards you because the y_offset value is
-  //changing constnatly which causes the origin point to shift.
+  //changing constantly which causes the origin point to shift.
   for(int y = 0; y < rows; y++){
     float x_offset = 0;
     for(int x = 0; x < cols; x++){
